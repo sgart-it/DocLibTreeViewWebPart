@@ -1,0 +1,8 @@
+﻿<Elements  xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WebParts" List="113" Url="_catalogs/wp" >
+    <File Url="SgartItSpDocLibTreeView.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Sgart.it" />
+      <Property Name="QuickAddGroups" Value="Sgart.it"/>
+    </File>
+  </Module>
+</Elements>

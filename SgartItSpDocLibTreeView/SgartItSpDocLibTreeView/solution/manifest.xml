@@ -1,0 +1,20 @@
+﻿<Solution SolutionId="54D24F6F-9E1E-4CCC-B4C5-070BEB76F5FB" 
+          xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <FeatureManifests>
+    <FeatureManifest Location="SgartItSpDocLibTreeView\feature.xml" />
+  </FeatureManifests>
+  <TemplateFiles>
+    <TemplateFile Location="Images\SgartItSpDocLibTreeView\SgartSP.png"/>
+  </TemplateFiles>
+  <Assemblies>
+    <Assembly Location="SgartIt.Sp.DocLibTreeView.dll" 
+              DeploymentTarget="GlobalAssemblyCache" >
+      <SafeControls>
+        <SafeControl Assembly="SgartIt.SpD.ocLibTreeView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" 
+                     Namespace="SgartIt.Sp" 
+                     TypeName="DocLibTreeView" 
+                     Safe="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+</Solution>

@@ -1,0 +1,20 @@
+;
+.OPTION EXPLICIT     ; Generate errors 
+.Set CabinetNameTemplate=SgartIt.Sp.DocLibTreeView.wsp    
+;.set DiskDirectoryTemplate=CDROM ; All cabinets go in a single directory
+.Set CompressionType=MSZIP;** All files are compressed in cabinet files
+.Set UniqueFiles="On"
+.Set Cabinet=on
+.Set DiskDirectory1=
+
+.Set DestinationDir=
+solution\manifest.xml
+DLL\SgartIt.Sp.DocLibTreeView.dll
+
+.Set DestinationDir=SgartItSpDocLibTreeView
+12\TEMPLATE\FEATURES\SgartItSpDocLibTreeView\feature.xml
+12\TEMPLATE\FEATURES\SgartItSpDocLibTreeView\elements.xml
+12\TEMPLATE\FEATURES\SgartItSpDocLibTreeView\SgartItSpDocLibTreeView.webpart
+
+.Set DestinationDir=IMAGES\SgartItSpDocLibTreeView
+12\TEMPLATE\IMAGES\SgartItSpDocLibTreeView\SgartSP.png

@@ -1,0 +1,14 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SgartIt.Sp.DocLibTreeView, SgartIt.Sp.DocLibTreeView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9f4da00116c38ec5" />
+      <importErrorMessage>Cannot import Sgart.it DocLib Tree View Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Sgart.it DocLib Tree View Web Part</property>
+        <property name="Description" type="string">Show a folder of document library in a tree view - http://www.sgart.it</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

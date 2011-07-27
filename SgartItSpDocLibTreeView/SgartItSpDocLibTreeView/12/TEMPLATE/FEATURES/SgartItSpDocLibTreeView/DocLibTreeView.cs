@@ -161,6 +161,7 @@ to configure this Web Part."
     {
       STreeItem node = new STreeItem();
       SPListItem item = folder.Item;
+      if (item == null && parent != null) return null;
       if (item == null)
         node.ID = 0;
       else
@@ -211,8 +212,11 @@ to configure this Web Part."
       foreach (SPFolder folder in parentFolder.SubFolders)
       {
         STreeItem currentItem = GetNode(folder, parent);
-        parent.SubItems.Add(currentItem);
-        LoadTree(folder, currentItem);
+        if (currentItem != null)
+        {
+          parent.SubItems.Add(currentItem);
+          LoadTree(folder, currentItem);
+        }
       }
     }
 

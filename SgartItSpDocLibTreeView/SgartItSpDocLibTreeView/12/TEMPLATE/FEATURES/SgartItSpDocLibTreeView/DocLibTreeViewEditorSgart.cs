@@ -11,7 +11,7 @@ namespace SgartIt.Sp
 
     public DocLibTreeViewEditorSgart()
     {
-      this.Title = "";
+      this.Title = "Info";
      
     }
 

@@ -14,7 +14,7 @@ namespace SgartIt.Sp
     protected CheckBox chkShowIconCss;
     protected CheckBox chkShowIconEdit;
 
-    private const int MAXLEVEL = 100;
+    private const int MAXLEVEL = 50;
 
     public DocLibTreeViewEditor()
     {
@@ -35,18 +35,15 @@ function sgartItSpDocLibTreeViewEditor(ctrlId) {{
       this.Page.ClientScript.RegisterClientScriptBlock(typeof(DocLibTreeViewEditor)
         , "sgartItSpDocLibTreeViewEditor", sb.ToString(), true);
 
-      if (Page.IsPostBack == false)
-      {
-        //dept
-        LoadDepth();
-
-      }
-      base.OnLoad(e);
+      //if (Page.IsPostBack == false)
+      //{
+      //}
+      //base.OnLoad(e);
     }
 
     private void LoadDepth()
     {
-      ddlDepth.Items.Add(new ListItem(MAXLEVEL.ToString(), "Unlimited"));
+      ddlDepth.Items.Add(new ListItem("Unlimited", MAXLEVEL.ToString()));
       for (int i = 1; i < 10; i++)
       {
         string s = i.ToString();
@@ -66,6 +63,7 @@ function sgartItSpDocLibTreeViewEditor(ctrlId) {{
       ddlDepth.ID = "ddlDepth";
       ddlDepth.CssClass = "UserInput";
       ddlDepth.Style.Add("width", "176px");
+      LoadDepth();
       this.Controls.Add(ddlDepth);
 
       chkShowItemTitle = new CheckBox();

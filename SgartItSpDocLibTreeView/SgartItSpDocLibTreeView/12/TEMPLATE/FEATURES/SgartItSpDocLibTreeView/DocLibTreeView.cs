@@ -233,7 +233,7 @@ to configure this Web Part."
 
     private string ShowTree(STreeItem currentItem)
     {
-      if (currentItem.SubItems.Count > 0)
+      if (depth > currentItem.Depth  && currentItem.SubItems.Count > 0)
       {
         StringBuilder sb = new StringBuilder(500);
         sb.AppendFormat("<ul class=\"sgartdltw\">");
